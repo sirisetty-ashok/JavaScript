@@ -7,9 +7,12 @@ let continent = "Asia";
 let population = 150,
   million;
 let isBoolean = false;
-let countryNamee = India;
+let isIsland = false;
+let language;
 
 console.log(countryName, continent, population);
 console.log(typeof countryName);
 console.log(typeof population);
 console.log(typeof isBoolean);
+console.log(typeof isIsland);
+console.log(typeof language);
