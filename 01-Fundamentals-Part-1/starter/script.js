@@ -40,3 +40,22 @@ console.log(firstName + " " + lastName);
 
 // x++; //x = x+1;
 // x++; //x = x-1;
+const population = 100000;
+const halfPoplation = population / 2;
+const newPoplation = population + 1;
+const avgPopulation = 33000000;
+console.log(newPoplation);
+const finpopulation = 6000000;
+console.log(population > finpopulation);
+console.log(avgPopulation < population);
+
+const description =
+  countryName +
+  " is in " +
+  continent +
+  ", and its " +
+  population +
+  " people speak " +
+  language +
+  ".";
+console.log(description);
