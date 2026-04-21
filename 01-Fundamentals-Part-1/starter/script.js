@@ -180,3 +180,24 @@ console.log(typeof NaN);
 
 console.log("23" + "45" + 5);
 console.log("23" - "45" - 5);
+
+// Swapping two numbers
+
+let a = 10;
+let b = 20;
+console.log(a, b);
+
+let temp = a;
+a = b;
+b = temp;
+console.log(a, b);
+
+// method 2: destructuring
+[a, b] = [b, a];
+console.log(a, b);
+
+// method 3: without temp
+a = a + b;
+b = a - b;
+a = a - b;
+console.log(a, b);
