@@ -201,3 +201,44 @@ a = a + b;
 b = a - b;
 a = a - b;
 console.log(a, b);
+
+let num = Number(prompt("enter your number"));
+if (num % 2 === 0) {
+  console.log("You entered even number");
+} else {
+  console.log("You entered odd number");
+}
+console.log(num);
+
+const numNeighbour = Number(
+  prompt(" How many neighbour countries does your country have?"),
+);
+if (numNeighbour === 1) {
+  console.log("Only 1 border!");
+} else if (numNeighbour > 1) {
+  console.log("More than 1 border!");
+} else {
+  console.log("No Borders");
+}
+
+const hasDriversLicense = true; //A
+const hasGoddVision = true; // B
+console.log(hasDriversLicense && hasGoddVision);
+console.log(hasDriversLicense || hasGoddVision);
+console.log(!hasDriversLicense);
+
+if (hasDriversLicense && hasGoddVision) {
+  console.log("Sarah is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKolas = (88 + 91 + 110) / 3;
+if (scoreDolphins > scoreKolas) {
+  console.log("Dolpins's win the tropy");
+} else if (scoreDolphins < scoreKolas) {
+  console.log("Kolalas win the tropy");
+} else {
+  console.log("Both win the tropy");
+}
