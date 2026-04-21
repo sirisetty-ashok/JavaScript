@@ -242,3 +242,24 @@ if (scoreDolphins > scoreKolas) {
 } else {
   console.log("Both win the tropy");
 }
+
+switch (language) {
+  case "chinese":
+  case "mandrin":
+    console.log("Most number of native speakers!");
+    break;
+  case "spanish":
+    console.log("2nd place in number of native speakers!");
+    break;
+  case "english":
+    console.log("3rd place!");
+    break;
+  case "hindi":
+    console.log("4th place!");
+    break;
+  case "arabic":
+    console.log("5th most spoken language");
+    break;
+  default:
+    console.log("Great language too");
+}
