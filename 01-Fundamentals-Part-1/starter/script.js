@@ -277,9 +277,14 @@
 //   );
 // }
 
-const bill = Number(prompt("Enter the bill"));
+// const bill = Number(prompt("Enter the bill"));
 
-const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
-console.log(
-  ` the bill was ${bill}, the tip was ${tip}, and the total was ${bill + tip}`,
-);
+// const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
+// console.log(
+//   ` the bill was ${bill}, the tip was ${tip}, and the total was ${bill + tip}`,
+// );
+
+//  to use strict mode we have to use this
+"use strict";
+username = "Ashok";
+console.log(username);
