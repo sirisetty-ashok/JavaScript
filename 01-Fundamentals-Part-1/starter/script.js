@@ -323,3 +323,75 @@ console.log(countryDetails1, Us1, london1);
 const calcAge = (birthYear) => 2037 - birthYear;
 const age = calcAge(2000);
 console.log(age);
+
+// challenge using function declaration
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+const indPopulation = percentageOfWorld1(1441);
+const usPopulation = percentageOfWorld1(300);
+const canadaPopulation = percentageOfWorld1(400);
+
+console.log(indPopulation);
+console.log(usPopulation);
+console.log(canadaPopulation);
+
+// challenge using function expression
+
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
+const indPopulation1 = percentageOfWorld2(1441);
+const usPopulation1 = percentageOfWorld2(45);
+const canadaPopulation1 = percentageOfWorld2(55);
+
+console.log(indPopulation1);
+console.log(usPopulation1);
+console.log(canadaPopulation1);
+
+// challenge using arrow function
+
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+const indPopulation2 = percentageOfWorld3(1441);
+const usPopulation2 = percentageOfWorld3(45);
+const canadaPopulation2 = percentageOfWorld3(55);
+
+console.log(indPopulation2);
+console.log(usPopulation2);
+console.log(canadaPopulation2);
+
+// calling another function example
+
+function describePopultion(population, country) {
+  const percentage = percentageOfWorld1(population);
+  return `${country} has ${population} million people, whih is about ${percentage}% of the world`;
+}
+const indPopulation3 = describePopultion(1441, "India");
+const usPopulation3 = describePopultion(45, "vhima");
+const canadaPopulation3 = describePopultion(55, "canada");
+
+console.log(indPopulation3);
+console.log(usPopulation3);
+console.log(canadaPopulation3);
+
+function calcAverage(score1, score2, score3) {
+  const avgScore = (score1 + score2 + score3) / 3;
+  return avgScore;
+}
+
+// const scoreDolphins = calcAverage(44, 23, 71);
+// const scoreKoalas = calcAverage(65, 54, 49);
+const scoreDolphins = calcAverage(85, 54, 41);
+const scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+function checkWinner(avgDolphins, avgKoalas) {
+  if (scoreDolphins > 2 * scoreKoalas) {
+    console.log(`Dolphins win ${scoreDolphins} vs.${scoreKoalas}`);
+  } else if (scoreKoalas > 2 * scoreDolphins) {
+    console.log(`Kolalas win ${scoreKoalas} vs.${scoreDolphins}`);
+  } else {
+    console.log("No team wins");
+  }
+}
+checkWinner(scoreDolphins, scoreKoalas);
