@@ -318,3 +318,8 @@ const london1 = describeCountry("canada", 40, "london");
 
 console.log(countryDetails1, Us1, london1);
 // console.log(describeCountry1);
+
+// arrow functions
+const calcAge = (birthYear) => 2037 - birthYear;
+const age = calcAge(2000);
+console.log(age);
