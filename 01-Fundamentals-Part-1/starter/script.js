@@ -285,6 +285,24 @@
 // );
 
 //  to use strict mode we have to use this
-"use strict";
-username = "Ashok";
-console.log(username);
+// "use strict";
+// username = "Ashok";
+// console.log(username);
+
+function myFunction(userName) {
+  // the username is a parameter
+  console.log("My name is " + userName);
+}
+myFunction("Ashok");
+myFunction("lahari");
+myFunction("sirisetty"); //these are arguments
+//the above line we can call it as calling or invoking or running the function.
+
+function describeCountry(country, population, capitalcity) {
+  return `${country} has ${population} million and its capital city is ${capitalcity} `;
+}
+const countryDetails = describeCountry("India", 50, "Delhi");
+const Us = describeCountry("America", 33, "washington");
+const london = describeCountry("canada", 40, "london");
+
+console.log(countryDetails, Us, london);
