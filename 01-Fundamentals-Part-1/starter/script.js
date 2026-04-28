@@ -298,6 +298,7 @@ myFunction("lahari");
 myFunction("sirisetty"); //these are arguments
 //the above line we can call it as calling or invoking or running the function.
 
+// writing the function in function declaration way
 function describeCountry(country, population, capitalcity) {
   return `${country} has ${population} million and its capital city is ${capitalcity} `;
 }
@@ -306,3 +307,14 @@ const Us = describeCountry("America", 33, "washington");
 const london = describeCountry("canada", 40, "london");
 
 console.log(countryDetails, Us, london);
+
+// writing the function in function expression way
+const describeCountry1 = function (country, population, capitalcity) {
+  return `${country} has ${population} million and its capital city is ${capitalcity} `;
+};
+const countryDetails1 = describeCountry("India", 50, "Delhi");
+const Us1 = describeCountry("America", 33, "washington");
+const london1 = describeCountry("canada", 40, "london");
+
+console.log(countryDetails1, Us1, london1);
+// console.log(describeCountry1);
