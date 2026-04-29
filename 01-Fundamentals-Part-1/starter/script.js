@@ -442,3 +442,27 @@ console.log(friends.indexOf("bob")); //it returns -1 if element is not found.
 // The below include method tells the position of the element in the array introduced in es-6 and return true and false and it also checks like strict equality
 console.log(friends.includes("Ashok"));
 console.log(friends.includes("bob"));
+
+function calcTip(bill) {
+  if (bill >= 50 && bill <= 300) {
+    const tip = (bill * 15) / 100;
+    return tip;
+  } else {
+    const tip = (bill * 20) / 100;
+    return tip;
+  }
+}
+
+console.log(calcTip(500));
+
+const bills = [125, 555, 44];
+
+const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tip);
+
+const total = [
+  bills[0] + calcTip(bills[0]),
+  bills[1] + calcTip(bills[1]),
+  bills[2] + calcTip(bills[2]),
+];
+console.log(total);
