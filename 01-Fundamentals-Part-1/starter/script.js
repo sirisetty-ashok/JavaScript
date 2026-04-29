@@ -466,3 +466,20 @@ const total = [
   bills[2] + calcTip(bills[2]),
 ];
 console.log(total);
+
+// OBJECT
+const ashok = {
+  firstName: "Ashok",
+  lastName: "sirisetty",
+  age: 26,
+  friends: ["lingesh", "ravana", "ramu"],
+};
+console.log(ashok);
+// push the data into object
+((ashok.location = "banglore"),
+  (ashok.mailid = "ashok123@gmail.com"),
+  console.log(ashok));
+
+console.log(
+  `${ashok.firstName} has ${ashok.friends.length} friends, and his best friend is called ${ashok.friends[1]}`,
+);
