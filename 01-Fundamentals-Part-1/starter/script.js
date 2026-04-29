@@ -395,3 +395,26 @@ function checkWinner(avgDolphins, avgKoalas) {
   }
 }
 checkWinner(scoreDolphins, scoreKoalas);
+
+// ARRAYS
+
+const friend1 = "Ashok";
+const friends2 = "Shiva";
+const friend3 = "Ram";
+
+const friends = ["Ashok", "Shiva", "Ram"];
+
+const friendss = new Array("Ashok", "Shiva", "Ram");
+console.log(friends, friendss);
+
+const population = ["india", "japan", "malesia", "thailand"];
+console.log(population);
+console.log(population.length === 4);
+
+const percentages = [
+  percentageOfWorld1(333),
+  percentageOfWorld1(450),
+  percentageOfWorld1(1441),
+];
+
+console.log(percentages);
