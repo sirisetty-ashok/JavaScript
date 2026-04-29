@@ -418,3 +418,27 @@ const percentages = [
 ];
 
 console.log(percentages);
+
+friends.push("Raju"); // push is a one method it adds to the last element of the array and basically this push and unshift return the length
+console.log(friends);
+const newlength = friends.unshift("teja"); // unshift is a one method it adds to the first element of the array
+console.log(friends);
+console.log(newlength); //testing the will it returning the length or not
+
+//REMOVE elements
+
+const newtest = friends.pop(); //pop method removes the last element from the array and pop returns the element that is removed
+console.log(friends);
+console.log(newtest); //testing what the pop method is returing
+const newlength1 = friends.shift(); // shift is a one method it removes to the first element of the array
+console.log(friends);
+console.log(newlength1); //testing what the shift method is returing nd shift returns the element that is removed
+
+// The below indexOf method tells the position of the element in the array
+
+console.log(friends.indexOf("Ashok"));
+console.log(friends.indexOf("bob")); //it returns -1 if element is not found.
+
+// The below include method tells the position of the element in the array introduced in es-6 and return true and false and it also checks like strict equality
+console.log(friends.includes("Ashok"));
+console.log(friends.includes("bob"));
