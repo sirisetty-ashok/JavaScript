@@ -542,3 +542,23 @@ if (mark.bmi > john.bmi) {
     `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi}) `,
   );
 }
+
+// let x = "5";
+// let y = x++ + ++x;
+// console.log(x, y);
+
+for (i = 1; i <= 50; i++) {
+  console.log(`voter number ${i} is currently voting`);
+}
+
+const listOfNeighbours = [
+  ["canada", "mexico"],
+  ["spain"],
+  ["norway", "swedan", "russia"],
+];
+
+for (i = 0; i < listOfNeighbours.length; i++) {
+  for (j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(`neighbour:${listOfNeighbours[i][j]}`);
+  }
+}
