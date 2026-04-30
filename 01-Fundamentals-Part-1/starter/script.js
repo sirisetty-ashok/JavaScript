@@ -509,3 +509,36 @@ console.log(myCountry);
 myCountry.describe();
 myCountry.checkIsland();
 console.log(myCountry);
+
+const mark = {
+  fullName: "nikolas mark",
+  mass: 62,
+  height: 2,
+  calcBmi: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.avgScorebmi;
+  },
+};
+const john = {
+  fullName: "nikolas john",
+  mass: 65,
+  height: 1.5,
+
+  calcBmi: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+
+mark.calcBmi();
+john.calcBmi();
+
+if (mark.bmi > john.bmi) {
+  console.log(
+    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi}) `,
+  );
+} else {
+  console.log(
+    `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi}) `,
+  );
+}
