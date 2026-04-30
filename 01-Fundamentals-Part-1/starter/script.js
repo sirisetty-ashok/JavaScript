@@ -483,3 +483,29 @@ console.log(ashok);
 console.log(
   `${ashok.firstName} has ${ashok.friends.length} friends, and his best friend is called ${ashok.friends[1]}`,
 );
+
+const myCountry = {
+  country: "India",
+  capital: "Delhi",
+  language: "Hindi",
+  population: 100,
+  neighbours: ["bangladesh", "china", "nepal"],
+  describe: function () {
+    console.log(
+      `${this.country} has ${this.population} millio ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and capital called ${this.capital}`,
+    );
+  },
+
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length > 0 ? false : true;
+  },
+};
+console.log(
+  `${myCountry.country} has ${myCountry.population} millio ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and capital called ${myCountry.capital}`,
+);
+myCountry.population = 2 + myCountry.population;
+myCountry["population"] = myCountry.population - 2;
+console.log(myCountry);
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry);
