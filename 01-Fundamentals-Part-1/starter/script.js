@@ -320,7 +320,7 @@ console.log(countryDetails1, Us1, london1);
 // console.log(describeCountry1);
 
 // arrow functions
-const calcAge = (birthYear) => 2037 - birthYear;
+const calcAge = birthYear => 2037 - birthYear;
 const age = calcAge(2000);
 console.log(age);
 
@@ -351,7 +351,7 @@ console.log(canadaPopulation1);
 
 // challenge using arrow function
 
-const percentageOfWorld3 = (population) => (population / 7900) * 100;
+const percentageOfWorld3 = population => (population / 7900) * 100;
 
 const indPopulation2 = percentageOfWorld3(1441);
 const usPopulation2 = percentageOfWorld3(45);
@@ -582,3 +582,17 @@ function average(arr) {
 }
 console.log(average(billss));
 console.log(average(totalss));
+
+function printForcast(arr) {
+  let result = "";
+  for (i = 0; i < arr.length; i++) {
+    result = result + `... ${arr[i]} \u2103 in ${1 + i} days `;
+  }
+  result = result + `...`;
+
+  console.log(result);
+}
+const newtemps = [17, 21, 23];
+const newtemperature = [12, 5, -5, 0, 4];
+printForcast(newtemps);
+printForcast(newtemperature);
