@@ -562,3 +562,13 @@ for (i = 0; i < listOfNeighbours.length; i++) {
     console.log(`neighbour:${listOfNeighbours[i][j]}`);
   }
 }
+
+const billss = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totalss = [];
+for (i = 0; i < billss.length; i++) {
+  tips.push(calcTip(billss[i]));
+  totalss.push(billss[i] + tips[i]);
+}
+console.log(tips);
+console.log(totalss);
