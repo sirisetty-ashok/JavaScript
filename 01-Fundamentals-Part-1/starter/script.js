@@ -572,3 +572,13 @@ for (i = 0; i < billss.length; i++) {
 }
 console.log(tips);
 console.log(totalss);
+function average(arr) {
+  let tot = 0;
+  for (i = 0; i < arr.length; i++) {
+    tot = tot + arr[i];
+  }
+  const avg = tot / arr.length;
+  return avg;
+}
+console.log(average(billss));
+console.log(average(totalss));
