@@ -596,3 +596,34 @@ const newtemps = [17, 21, 23];
 const newtemperature = [12, 5, -5, 0, 4];
 printForcast(newtemps);
 printForcast(newtemperature);
+
+function timeTracking(arr) {
+  let hours = 0;
+  let mostWorked = -Infinity;
+  let mostWorkedDay;
+  let totalDaysWorked = 0;
+  for (i = 0; i < arr.length; i++) {
+    hours += arr[i];
+    if (arr[i] > mostWorked) {
+      mostWorked = arr[i];
+      mostWorkedDay = i;
+    }
+    if (arr[i] > 0) {
+      totalDaysWorked++;
+    }
+  }
+  let fullTime =
+    hours >= 35
+      ? `worked full time ${hours} hours`
+      : `Not worked full time ${hours} hours`;
+
+  const avgHours = hours / arr.length;
+  console.log(`total hours : ${hours}`);
+  console.log(`Average daily hours : ${avgHours}`);
+  console.log(`most worked day : ${mostWorkedDay}`);
+  console.log(`total number of days worked : ${totalDaysWorked}`);
+  console.log(fullTime);
+}
+
+const workinghours = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+timeTracking(workinghours);
